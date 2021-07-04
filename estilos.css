@@ -445,6 +445,7 @@ footer .logofooter img {
 }
 .menu-mobile .div1 ul li a {
     text-decoration: none;
+    color: rgb(102, 31, 168);
 }
 
 .menu-mobile .div2 {
@@ -453,6 +454,9 @@ footer .logofooter img {
 }
 .menu-mobile .div2 ul li {
     display: inline-block;
+}
+.menu-mobile .div2 ul li a {
+    color: rgb(102, 31, 168);
 }
 
 .label-mobile {
@@ -472,4 +476,64 @@ footer .logofooter img {
 
 .h1p {
     font-size: 28px;
+}
+
+
+.form-contacto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 30%;
+    margin-right: 20%;
+}
+.form-contacto input {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-top: 3px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px pink solid;
+    background-color: whitesmoke;
+}
+.form-contacto textarea {
+    margin-top: 3px;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px pink solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contacto input:focus {
+    outline: none;
+    border-bottom: 2px plum solid;
+}
+.form-contacto input:hover {
+    border-bottom: 2px plum solid;
+}
+.form-contacto textarea:focus {
+    outline: none;
+    border: 1px plum solid;
+}
+.form-contacto textarea:hover {
+    border: 1px plum solid;
+}
+
+.form-contacto .button button {
+    font-size: 20px;
+    color: rgb(145, 69, 145);
+    background-color: pink;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.form-contacto .button {
+    text-align: center;
+}
+.form-contacto .button button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(145, 69, 145);
+}
+
+.form-contacto .textarea2 {
+    display: none;
 }
