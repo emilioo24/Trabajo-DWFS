@@ -482,7 +482,7 @@ footer .logofooter img {
 .form-contacto {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-right: 20%;
 }
 .form-contacto input {
@@ -536,4 +536,20 @@ footer .logofooter img {
 
 .form-contacto .textarea2 {
     display: none;
+}
+
+
+.titulo-page h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 39px;
+    color: rgb(253, 124, 146);
+}
+
+.hr-titulo {
+    background-color: pink;
+    margin-top: 2.5%;
+    width: 33%;
+    height: 3px;
+    border: none;
 }

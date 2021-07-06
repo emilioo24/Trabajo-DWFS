@@ -232,4 +232,11 @@
         display: block;
     }
 
+    .titulo-page h1 {
+        font-size: 20px;
+    }
+    .hr-titulo {
+        width: 20%;
+    }
+
 }
