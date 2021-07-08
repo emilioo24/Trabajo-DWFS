@@ -188,6 +188,10 @@
         height: 400px;
     }
 
+    .contenido-servicios img {
+        width: 200px;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -260,6 +264,15 @@
     }
     .hr-titulo {
         width: 20%;
+    }
+
+    .contenido-servicios img {
+        width: 150px;
+    }
+
+    .contenido-servicios {
+        border-left: 0px pink solid;
+        border-right: 0px pink solid;
     }
 
 }

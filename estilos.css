@@ -135,11 +135,14 @@ main .textoport span {
 }
 
 .contenido-servicios {
-    border: 1px pink solid;
+    border-bottom: 1px pink solid;
+    border-top: 1px pink solid;
+    border-left: 1px pink solid;
+    border-right: 1px pink solid;
     display: flex;
 }
 .contenido-servicios img {
-    width: 100%;
+    width: 350px;
 }
 
 .contenido1 {
