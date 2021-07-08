@@ -165,6 +165,29 @@
         display: none;
     }
 
+    .label-mobile {
+        display: block;
+    }
+
+    header .logo img {
+        width: 40px;
+    }
+
+    .perfil {
+        left: 10px;
+        top: 110px;
+    }
+
+    main .textoport {
+        top: 150px;
+        left: 325px;
+        font-size: 13px;
+    }
+
+    main .portada img {
+        height: 400px;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
