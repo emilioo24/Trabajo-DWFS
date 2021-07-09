@@ -137,6 +137,9 @@
     cursor: pointer;
 }
 
+.textarea3 {
+    display: none;
+}
 
 
 
@@ -190,6 +193,16 @@
 
     .contenido-servicios img {
         width: 200px;
+    }
+
+    .textarea3 {
+        display: block;
+    }
+    .textarea2 {
+        display: none;
+    }
+    .textarea1 {
+        display: none;
     }
 
 }
@@ -273,6 +286,10 @@
     .contenido-servicios {
         border-left: 0px pink solid;
         border-right: 0px pink solid;
+    }
+
+    .textarea3 {
+        display: none;
     }
 
 }
