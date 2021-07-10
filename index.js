@@ -28,8 +28,6 @@ app.use('/', express.static(__dirname + '/public/'));
 
 
 
-
-
 conexion.end();
 
 app.listen(4000, function() {

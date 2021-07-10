@@ -164,7 +164,7 @@
     header .lista {
         display: none;
     }
-    header .redes {
+    .redes {
         display: none;
     }
 
@@ -239,7 +239,7 @@
     header .lista {
         display: none;
     }
-    header .redes {
+    .redes {
         display: none;
     }
 
@@ -290,6 +290,20 @@
 
     .textarea3 {
         display: none;
+    }
+
+    .h-redes {
+        font-size: 12px;
+    }
+
+    .redes-m nav ul li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .hr-contenido {
+        margin-left: 18%;
+        margin-right: 18%;
     }
 
 }

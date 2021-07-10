@@ -45,24 +45,24 @@ header .lista a:hover {
     text-shadow: -1px -1px;
     transition-duration: 0.2s;
 }
-header .redes {
+.redes {
     width: 16%;
     padding-top: 2%;
 }
-header .redes nav ul {
+.redes nav ul {
     list-style: none;
 }
-header .redes nav ul li {
+.redes nav ul li {
     display: inline-block;
     font-size: 22px;
 }
-header .redes a {
+.redes a {
     color: rgb(102, 31, 168);
     text-decoration: none;
     transition: color;
     padding: 2px;
 }
-header .redes a:hover {
+.redes a:hover {
     color: blueviolet;
     text-shadow: -1px -1px;
     transition-duration: 0.2s;
@@ -582,4 +582,42 @@ footer .logofooter img {
     width: 33%;
     height: 3px;
     border: none;
+}
+
+
+.hr-contenido {
+    margin-left: 27%;
+    margin-right: 27%;
+}
+
+.h-redes h2 {
+    padding-bottom: 2px;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.redes-m {
+    width: 16%;
+    padding-top: 2%;
+}
+.redes-m nav ul {
+    list-style: none;
+}
+.redes-m nav ul li {
+    display: inline-block;
+    font-size: 30px;
+}
+.redes-m a {
+    color: rgb(102, 31, 168);
+    text-decoration: none;
+    transition: color;
+    padding: 2px;
+}
+.redes-m a:hover {
+    color: blueviolet;
+    text-shadow: -1px -1px;
+    transition-duration: 0.2s;
 }
