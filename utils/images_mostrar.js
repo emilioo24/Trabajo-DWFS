@@ -1,10 +1,25 @@
 const vares = require('./images_src');
 
-function mostrarImages(images) {
-    let imageHTML = '';
-    images.forEach(element => {
-        imageHTML += `<img src="${vares.img_logo}" alt="Lic. Florencia Calderón - Pelvis On - Rehabilitación de piso pélvico">`
-    });
-    
-    document.getElementById('img-logo').innerHTML = imageHTML;
+function imgLogo() {
+    document.getElementById('image').innerHTML = vares.img_logo;
+}
+
+function imgEmbarazada() {
+    document.getElementById('image').innerHTML = vares.img_embarazada;
+}
+
+function imgPerfil() {
+    document.getElementById('image').innerHTML = vares.img_perfil;
+}
+
+function imgPortada() {
+    document.getElementById('image').innerHTML = vares.img_portada;
+}
+
+function imgPostura() {
+    document.getElementById('image').innerHTML = vares.img_postura;
+}
+
+function imgFavicon() {
+    document.getElementById('image').href = vares.img_favicon;
 }

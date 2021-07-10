@@ -217,9 +217,9 @@ main .textoport span {
     padding: 15px;
 }
 .texto h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 10px;
-    font-size: 35px;
+    font-size: 30px;
     color: rgb(226, 105, 125);
     text-decoration: underline;
 }
@@ -611,13 +611,13 @@ footer .logofooter img {
     font-size: 30px;
 }
 .redes-m a {
-    color: rgb(102, 31, 168);
+    color: rgb(253, 124, 146);
     text-decoration: none;
     transition: color;
     padding: 2px;
 }
 .redes-m a:hover {
-    color: blueviolet;
+    color: rgb(255, 94, 121);
     text-shadow: -1px -1px;
     transition-duration: 0.2s;
 }
