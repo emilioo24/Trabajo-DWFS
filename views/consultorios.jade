@@ -1,0 +1,117 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='stylesheets/estilos.css')
+    link(rel='stylesheet' href='stylesheets/style.css')
+    link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')
+    title Pelvis On - Consultorios
+  body
+    header(style='justify-content: space-between;')
+      .logo(style='padding-right: 100px;')
+        img(src="images/logo.jpg", alt="Lic. Florencia Calderón - Pelvis On")  
+      .lista(style='width: 70%;')
+        nav
+          ul
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/') Inicio
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/consultorios') Consultorios
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/servicios') Servicios
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/preguntas') Preguntas
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/contacto') Contacto
+      .redes
+        nav
+          ul
+            li(style='font-size: 18px;')
+              a(href='https://www.instagram.com/pelvis.on/' target='_blank' rel='noopener noreferrer')
+                i.bi.bi-instagram
+            li(style='font-size: 18px;')
+              a(href='https://www.facebook.com/pelvison-104696371265794' target='_blank' rel='noopener noreferrer')
+                i.bi.bi-facebook
+            li(style='font-size: 18px;')
+              a(href='https://api.whatsapp.com/send?phone=5493436227825' target='_blank' rel='noopener noreferrer')
+                i.bi.bi-whatsapp
+            li(style='font-size: 18px;')
+              a(href='mailto:calderonflorenciae@gmail.com')
+                i.bi.bi-envelope-fill
+            li(style='font-size: 18px;')
+              a(href='tel:+543436227825')
+                i.bi.bi-telephone-fill
+      // Menu responsive
+      input#mobile(style='display: none;' type='checkbox')
+      label.label-mobile2(for='mobile')
+        i.bi.bi-x
+      input#mobile2(style='display: none;' type='checkbox')
+      label.label-mobile(for='mobile')
+        i.bi.bi-list
+      .menu-mobile
+        .div1
+          nav
+            ul
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/') Inicio
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/consultorios') Consultorios
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/servicios') Servicios
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/preguntas') Preguntas
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/contacto') Contacto
+        .div2
+          span(style='color: purple; font-family: Arial; margin-bottom: 30px; font-size: 12px;') Sigueme
+          nav
+            ul
+              li(style='font-size: 18px;')
+                a(href='https://www.instagram.com/pelvis.on/' target='_blank' rel='noopener noreferrer')
+                  i.bi.bi-instagram
+              li(style='font-size: 18px;')
+                a(href='https://www.facebook.com/pelvison-104696371265794' target='_blank' rel='noopener noreferrer')
+                  i.bi.bi-facebook
+              li(style='font-size: 18px;')
+                a(href='https://api.whatsapp.com/send?phone=5493436227825' target='_blank' rel='noopener noreferrer')
+                  i.bi.bi-whatsapp
+              li(style='font-size: 18px;')
+                a(href='mailto:calderonflorenciae@gmail.com')
+                  i.bi.bi-envelope-fill
+              li(style='font-size: 18px;')
+                a(href='tel:+543436227825')
+                  i.bi.bi-telephone-fill
+    main
+      br
+      br
+      br
+      .titulo-page(style='display: flex; justify-content: space-between;')
+        hr.hr-titulo
+        h1 Consultorios
+        hr.hr-titulo
+      br
+      .contenido
+        .contenido1
+          div
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.682287759234!2d-60.50942826854255!3d-31.73932506158643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44d39877fbd11%3A0xe24e1f49210794d5!2sCIBYS%20(Centro%20Integral%20de%20Bienestar%20y%20Salud)!5e0!3m2!1ses-419!2sar!4v1621184664653!5m2!1ses-419!2sar' width='100%' height='300' style='border:0;' allowfullscreen='' loading='lazy')
+          .texto
+            h1 Consultorio en Paraná (CIBYS)
+            p Centro Integral de Bienestar y Salud
+            br
+        br
+        .contenido2
+          div
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.957672040717!2d-60.71190599999999!3d-31.6350093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a951c436c739%3A0xb49cc8e8ce2ae470!2sCEMAP!5e0!3m2!1ses-419!2sar!4v1621184613738!5m2!1ses-419!2sar' width='100%' height='300' style='border:0;' allowfullscreen='' loading='lazy')
+          .texto
+            h1 Consultorio en Santa Fe (CEMAP)
+            p Centro de Especialidades Médicas Ambulatorio y Privado
+            br
+    footer.footer2
+      div
+        span
+          | Copyright © 2021 Pelvis On. Todos los derechos reservados. Desarrolado por 
+          a(href='http://instagram.com/emicalderon24/' target='_blank' rel='noopener noreferrer') @emicalderon24
+    script(src='../utils/images_mostrar.js')

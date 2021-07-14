@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='stylesheets/estilos.css')
+    link(rel='stylesheet' href='stylesheets/style.css')
+    link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')
+    title Pelvis On - Servicios
+  body
+    header(style='justify-content: space-between;')
+      .logo(style='padding-right: 100px;')
+        img(src="images/logo.jpg", alt="Lic. Florencia Calderón - Pelvis On")    
+      .lista(style='width: 70%;')
+        nav
+          ul
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/') Inicio
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/consultorios') Consultorios
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/servicios') Servicios
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/preguntas') Preguntas
+            li(style='font-size: 15px; font-family: Arial;')
+              a(href='/contacto') Contacto
+      .redes
+        nav
+          ul
+            li(style='font-size: 18px;')
+              a(href='https://www.instagram.com/pelvis.on/' target='_blank' rel='noopener noreferrer')
+                i.bi.bi-instagram
+            li(style='font-size: 18px;')
+              a(href='https://www.facebook.com/pelvison-104696371265794' target='_blank' rel='noopener noreferrer')
+                i.bi.bi-facebook
+            li(style='font-size: 18px;')
+              a(href='https://api.whatsapp.com/send?phone=5493436227825' target='_blank' rel='noopener noreferrer')
+                i.bi.bi-whatsapp
+            li(style='font-size: 18px;')
+              a(href='mailto:calderonflorenciae@gmail.com')
+                i.bi.bi-envelope-fill
+            li(style='font-size: 18px;')
+              a(href='tel:+543436227825')
+                i.bi.bi-telephone-fill
+      // Menu responsive
+      input#mobile(style='display: none;' type='checkbox')
+      label.label-mobile2(for='mobile')
+        i.bi.bi-x
+      input#mobile2(style='display: none;' type='checkbox')
+      label.label-mobile(for='mobile')
+        i.bi.bi-list
+      .menu-mobile
+        .div1
+          nav
+            ul
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/') Inicio
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/consultorios') Consultorios
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/servicios') Servicios
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/preguntas') Preguntas
+              li(style='font-size: 15px; font-family: Arial;')
+                a(href='/contacto') Contacto
+        .div2
+          span(style='color: purple; font-family: Arial; margin-bottom: 30px; font-size: 12px;') Sigueme
+          nav
+            ul
+              li(style='font-size: 18px;')
+                a(href='https://www.instagram.com/pelvis.on/' target='_blank' rel='noopener noreferrer')
+                  i.bi.bi-instagram
+              li(style='font-size: 18px;')
+                a(href='https://www.facebook.com/pelvison-104696371265794' target='_blank' rel='noopener noreferrer')
+                  i.bi.bi-facebook
+              li(style='font-size: 18px;')
+                a(href='https://api.whatsapp.com/send?phone=5493436227825' target='_blank' rel='noopener noreferrer')
+                  i.bi.bi-whatsapp
+              li(style='font-size: 18px;')
+                a(href='mailto:calderonflorenciae@gmail.com')
+                  i.bi.bi-envelope-fill
+              li(style='font-size: 18px;')
+                a(href='tel:+543436227825')
+                  i.bi.bi-telephone-fill
+    main
+      br
+      br
+      br
+      .titulo-page(style='display: flex; justify-content: space-between;')
+        hr.hr-titulo
+        h1 Servicios
+        hr.hr-titulo
+      br
+      .contenido
+        .contenido-servicios
+          div
+            img(src="images/perfil.jpg", alt="Lic. Florencia Calderón - Pelvis On")
+          .texto
+            h1 Rehabilitación de piso pélvico
+            p
+              | El tratamiento de la disfunción del suelo pélvico agrupa una serie de técnicas y procedimientos conservadores como cambios en hábitos de vida, terapia conductual, biofeedback, electroestimulación (neuromodulación y estimulación eléctrica periférica) y entrenamiento con ejercicios musculares del suelo pélvico.
+        br
+        .contenido-servicios
+          div
+            img(src="images/mompad3.jpg", alt="Lic. Florencia Calderón - Pelvis On")
+          .texto
+            h1 Ejercicios para embarazadas
+            p
+              | Caminar es un gran ejercicio para principiantes. Proporciona un acondicionamiento aeróbico moderado con mínima tensión sobre las articulaciones. Otras buenas opciones incluyen natación, ejercicios aeróbicos de bajo impacto y bicicleta fija.
+        br
+        .contenido-servicios
+          div
+            img(src="images/postura.jpg", alt="Lic. Florencia Calderón - Pelvis On")
+          .texto
+            h1 Corrección de posturas
+            p
+              | La columna vertebral tiene por naturaleza unas curvaturas propias que determinan la buena alineación de la misma y que, con el paso del tiempo, si no somos capaces de mantener, terminan por darnos problemas tanto de funcionalidad como musculares y pudiendo llegar a afectarnos a toda la columna en sí, espalda, cuello y hombros.
+    footer.footer2
+      div
+        span
+          | Copyright © 2021 Pelvis On. Todos los derechos reservados. Desarrolado por 
+          a(href='http://instagram.com/emicalderon24/' target='_blank' rel='noopener noreferrer') @emicalderon24

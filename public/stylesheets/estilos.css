@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: pink;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px gray;
+}
+.logo {
+    width: 3%;
+}
+header .logo img {
+    width: 80px;
+    border-radius: 50%;
+}
+header .lista {
+    width: 60%;
+    padding-top: 2%;
+}
+header .lista nav ul {
+    list-style: none;
+}
+header .lista nav ul li {
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+header .lista a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(102, 31, 168);
+    transition: color;
+}
+header .lista a:hover {
+    color: blueviolet;
+    text-shadow: -1px -1px;
+    transition-duration: 0.2s;
+}
+.redes {
+    width: 16%;
+    padding-top: 2%;
+}
+.redes nav ul {
+    list-style: none;
+}
+.redes nav ul li {
+    display: inline-block;
+    font-size: 22px;
+}
+.redes a {
+    color: rgb(102, 31, 168);
+    text-decoration: none;
+    transition: color;
+    padding: 2px;
+}
+.redes a:hover {
+    color: blueviolet;
+    text-shadow: -1px -1px;
+    transition-duration: 0.2s;
+}
+
+
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img {
+    height: 600px;
+    width: 100%;
+    margin-top: 15px;
+}
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.contenido {
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+main .portada img {
+    width: 100%;
+    height: 550px;
+}
+.perfil {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+}
+main .perfil img {
+    width: 420px;
+}
+
+main .textoport {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
+main .textoport span {
+    font-size: 24px;
+    color: rgb(15, 201, 15);
+}
+
+.contenido-servicios {
+    border-bottom: 1px pink solid;
+    border-top: 1px pink solid;
+    border-left: 1px pink solid;
+    border-right: 1px pink solid;
+    display: flex;
+}
+.contenido-servicios img {
+    width: 350px;
+}
+
+.contenido1 {
+    border: 1px pink solid;
+}
+.contenido1 img {
+    width: 100%;
+}
+
+.contenido2 {
+    border: 1px pink solid;
+}
+.contenido2 img {
+    width: 100%;
+}
+
+.form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    margin: auto;
+}
+.form form span {
+    font-size: 13px;
+}
+.form input {
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(230, 227, 227);
+    font-size: 15px;
+    border-bottom: 2px pink solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.form input:focus {
+    outline: none;
+    border-bottom: 2px rgb(233, 126, 144) solid;
+}
+.form input:hover {
+    border-bottom: 2px rgb(233, 126, 144) solid;
+}
+.form input[type=submit] {
+    text-decoration: none;
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    background-color: rgb(253, 124, 146);
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color, font-size;
+    border: none;
+    margin: auto;
+    width: 40%;
+}
+.form input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(236, 54, 84);
+    color: whitesmoke;
+    font-size: 22px;
+    transition-duration: 0.2s;
+}
+.form a {
+    color: rgb(2, 140, 182);
+    text-decoration: none;
+}
+.form a:hover {
+    text-decoration: underline;
+}
+
+.texto {
+    padding: 15px;
+}
+.texto h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: rgb(226, 105, 125);
+    text-decoration: underline;
+}
+.texto p {
+    padding-bottom: 5px;
+    color: black;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.texto ul {
+    padding-left: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.texto .btn {
+    text-decoration: none;
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    background-color: rgb(253, 124, 146);
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color, font-size;
+    margin-left: 15px;
+}
+.texto .btn:hover {
+    background-color: rgb(236, 54, 84);
+    color: whitesmoke;
+    font-size: 22px;
+    transition-duration: 0.2s;
+}
+.texto span {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.contenidoc {
+    border: 1px pink solid;
+}
+
+.texto-compra {
+    text-align: center;
+}
+.texto-compra h1 {
+    padding-bottom: 10px;
+    color: rgb(226, 105, 125);
+}
+
+.form-compra input {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    width: 40%;
+    border-bottom: 2px pink solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.form-compra input:focus {
+    outline: none;
+    border-bottom: 2px rgb(233, 126, 144) solid;
+}
+.form-compra input:hover {
+    border-bottom: 2px rgb(233, 126, 144) solid;
+}
+.form-compra input[type=submit] {
+    text-decoration: none;
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    background-color: rgb(253, 124, 146);
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color, font-size;
+    border: none;
+    width: 25%;
+}
+.form-compra input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(236, 54, 84);
+    color: whitesmoke;
+    font-size: 22px;
+    transition-duration: 0.2s;
+}
+.form-compra select {
+    width: 40%;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+.form-compra select:focus {
+    outline: none;
+}
+
+.atencion {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+}
+
+
+
+.contenido-ver {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px;
+    display: flex;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contenido-ver h1 {
+    font-size: 50px;
+}
+.contenido-ver h2 {
+    font-size: 40px;
+}
+
+
+
+
+
+.footer1 {
+    margin-top: 2%;
+    padding: 5px;
+    background-color: pink;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+}
+.footer1 .navegar {
+    padding-right: 100px;
+}
+.footer1 .navegar ul {
+    list-style: none;
+    padding-left: 10px;
+}
+.footer2 {
+    margin-top: 3%;
+    text-align: center;
+    padding: 5px;
+    color: rgb(90, 90, 90);
+    background-color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer2 a {
+    color: rgb(102, 31, 168);
+    text-decoration: none;
+}
+.footer2 a:hover {
+    color: blueviolet;
+}
+footer .logofooter img {
+    width: 105px;
+    border-radius: 50%;
+}
+.footer2 span {
+    font-size: 12px;
+}
+
+
+.footer3 {
+    margin-top: 3%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(90, 90, 90);
+    background-color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer3 a {
+    color: rgb(102, 31, 168);
+    text-decoration: none;
+}
+.footer3 a:hover {
+    color: blueviolet;
+}
+.footer3 span {
+    font-size: 12px;
+}
+
+
+.footer3 .redes {
+    padding-top: 2%;
+}
+.footer3 .redes nav ul {
+    list-style: none;
+}
+.footer3 .redes nav ul li {
+    display: inline-block;
+    font-size: 15px;
+}
+.footer3 .redes a {
+    color: rgb(102, 31, 168);
+    text-decoration: none;
+    transition: color;
+    padding: 2px;
+}
+.footer3 .redes a:hover {
+    color: blueviolet;
+    text-shadow: -1px -1px;
+    transition-duration: 0.2s;
+}
+
+
+
+
+.menu-mobile {
+    position: absolute;
+    width: 100%;
+    top: 49px;
+    right: 1700px;
+    text-align: center;
+    z-index: 3;
+    background-color: pink;
+    height: 200%;
+    transition: right;
+}
+.menu-mobile .div1 {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.menu-mobile .div1 ul {
+    list-style: none;
+}
+.menu-mobile .div1 ul li {
+    padding: 10px;
+}
+.menu-mobile .div1 ul li a {
+    text-decoration: none;
+    color: rgb(102, 31, 168);
+}
+
+.menu-mobile .div2 {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.menu-mobile .div2 ul li {
+    padding: 3px;
+    display: inline-block;
+}
+.menu-mobile .div2 ul li a {
+    color: rgb(102, 31, 168);
+}
+
+.label-mobile {
+    display: none;
+    text-align: right;
+    font-size: 35px;
+    color: rgb(102, 31, 168);
+}
+.label-mobile2 {
+    display: none;
+    text-align: right;
+    font-size: 35px;
+    color: rgb(102, 31, 168);
+}
+.label-mobile:hover {
+    cursor: pointer;
+}
+.label-mobile2:hover {
+    cursor: pointer;
+}
+
+#mobile:checked ~ .menu-mobile {
+    right: 0px;
+    transition-duration: 0.5s;
+}
+#mobile:not(:checked) ~ .menu-mobile {
+    right: 1700px;
+    transition-duration: 0.5s;
+}
+
+#mobile:not(:checked) + .label-mobile {
+    display: none;
+}
+#mobile:checked ~ .label-mobile2 {
+    display: block;
+}
+#mobile:checked ~ .label-mobile {
+    display: none;
+}
+
+.h1p {
+    font-size: 28px;
+}
+
+
+.form-contacto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.form-contacto input {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-top: 3px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px pink solid;
+    background-color: whitesmoke;
+}
+.form-contacto textarea {
+    margin-top: 3px;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px pink solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contacto input:focus {
+    outline: none;
+    border-bottom: 2px plum solid;
+}
+.form-contacto input:hover {
+    border-bottom: 2px plum solid;
+}
+.form-contacto textarea:focus {
+    outline: none;
+    border: 1px plum solid;
+}
+.form-contacto textarea:hover {
+    border: 1px plum solid;
+}
+
+.form-contacto .button button {
+    font-size: 20px;
+    color: rgb(145, 69, 145);
+    background-color: pink;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.form-contacto .button {
+    text-align: center;
+}
+.form-contacto .button button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(145, 69, 145);
+}
+
+.form-contacto .textarea2 {
+    display: none;
+}
+
+
+.titulo-page h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 39px;
+    color: rgb(253, 124, 146);
+}
+
+.hr-titulo {
+    background-color: pink;
+    margin-top: 2.5%;
+    width: 33%;
+    height: 3px;
+    border: none;
+}
+
+
+.hr-contenido {
+    margin-left: 27%;
+    margin-right: 27%;
+}
+
+.h-redes h2 {
+    padding-bottom: 2px;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.redes-m {
+    width: 16%;
+    padding-top: 2%;
+}
+.redes-m nav ul {
+    list-style: none;
+}
+.redes-m nav ul li {
+    display: inline-block;
+    font-size: 30px;
+}
+.redes-m a {
+    color: rgb(253, 124, 146);
+    text-decoration: none;
+    transition: color;
+    padding: 2px;
+}
+.redes-m a:hover {
+    color: rgb(255, 94, 121);
+    text-shadow: -1px -1px;
+    transition-duration: 0.2s;
+}
+
+.error-msj {
+    color: red;
+    font-size: 13;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.success-msj {
+    color: green;
+    font-size: 13;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
