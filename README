@@ -1,0 +1,5 @@
+Los datos para conectarse a la base de datos estan cifrados en el .env
+
+De vez en cuando la conexión se cierra devido a un error
+
+Error: Can't add new command when connection is in closed state
