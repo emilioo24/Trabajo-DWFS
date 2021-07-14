@@ -31,9 +31,9 @@ router.post('/enviar', function (req, res) {
   VALUES ('${user.nombre}', '${user.email}', '${user.telefono}', '${user.mensaje}')`, function (error, result) {
     if (error) {
       console.error(error);
-      return res.render('errorver');
+      return res.render('contacto', { mensaje: "Error al enviar el mensaje", color: "red" });
     }
-    res.render('success');
+    res.render('contacto', { mensaje: "Mensaje enviado con éxito", color: "green" });
     console.log(result);
   });
 

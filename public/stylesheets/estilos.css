@@ -624,15 +624,13 @@ footer .logofooter img {
 }
 
 .error-msj {
-    color: red;
-    font-size: 13;
+    font-size: 13px;
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .success-msj {
-    color: green;
-    font-size: 13;
+    font-size: 13px;
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
