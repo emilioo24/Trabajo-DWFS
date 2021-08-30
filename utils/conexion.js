@@ -6,6 +6,7 @@ conexion.connect(function (error, result) {
   if (error) {
     console.error(error);
     console.log('ERROR');
+    conexion.end();
   }
 
   console.log('Conectado Correctamente');

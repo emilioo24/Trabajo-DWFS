@@ -26,7 +26,7 @@ router.get('/contacto', function (req, res) {
 router.post('/enviar', function (req, res) {
   console.log(req.body);
   const user = req.body;
-
+  
   sqlcon.query(`INSERT INTO users(nombre, email, telefono, mensaje) 
   VALUES ('${user.nombre}', '${user.email}', '${user.telefono}', '${user.mensaje}')`, function (error, result) {
     if (error) {
