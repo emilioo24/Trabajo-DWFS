@@ -1,3 +1,6 @@
+Nombre y Apellido: Emiliano Oscar Calderón
+Mi página es un blog para mi hermana que es kinesióloga y necesita contactos con sus pacientes a través de internet.
+
 Los datos para conectarse a la base de datos estan cifrados en el .env
 
 De vez en cuando la conexión a la base de datos se cierra devido a un error.
