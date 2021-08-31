@@ -1,0 +1,31 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/estilos.css')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+    
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')
+    title Pelvis On - Blog
+  body
+    p#res
+    script.
+      var data = JSON.parse('!{JSON.stringify(resultado)}');
+      for (var i = 0; i < data.length; i++) {
+        console.log(data[i].nombre);
+        console.log(data[i].email);
+        console.log(data[i].telefono);
+        console.log(data[i].mensaje);
+        console.log("---------------");
+        var newDiv = document.createElement("div");
+        var newContent = document.createTextNode(data[i].nombre+"\r\n"+data[i].email+" "+data[i].telefono+" "+data[i].mensaje);
+        newDiv.appendChild(newContent); //añade texto al div creado.
+
+        // añade el elemento creado y su contenido al DOM
+        var currentDiv = document.getElementById("res");
+        document.body.insertBefore(newDiv, currentDiv);
+      }
+    
+      
