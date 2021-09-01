@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Admin Login
+  body
+    form(action='verificar' method='post')
+      span Usuario: 
+      input#user(type='text' name='user' placeholder='Usuario' required='' pattern='[ a-zA-Z]{3,255}')
+      br
+      span Contraseña:
+      input#password(type='password' name='password' placeholder='Contraseña' required='')
+      br
+      br
+      button(type='submit') Ingresar
+      br
+      br
+      br
+      span #{error}

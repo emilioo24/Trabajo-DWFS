@@ -6,26 +6,46 @@ html(lang='en')
     link(rel='stylesheet' href='/stylesheets/estilos.css')
     link(rel='stylesheet' href='/stylesheets/style.css')
     link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
-    
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')
-    title Pelvis On - Blog
-  body
-    p#res
-    script.
-      var data = JSON.parse('!{JSON.stringify(resultado)}');
-      for (var i = 0; i < data.length; i++) {
-        console.log(data[i].nombre);
-        console.log(data[i].email);
-        console.log(data[i].telefono);
-        console.log(data[i].mensaje);
-        console.log("---------------");
-        var newDiv = document.createElement("div");
-        var newContent = document.createTextNode(data[i].nombre+"\r\n"+data[i].email+" "+data[i].telefono+" "+data[i].mensaje);
-        newDiv.appendChild(newContent); //añade texto al div creado.
-
-        // añade el elemento creado y su contenido al DOM
-        var currentDiv = document.getElementById("res");
-        document.body.insertBefore(newDiv, currentDiv);
+    title Pelvis On - Administración
+    style.
+      body {
+        padding: 10px;
       }
-    
+      td {
+        display: none;
+      }
+      span {
+        font-family: Arial;
+        font-size: 14px;
+      }
+      .coments {
+        border: 1px black solid;
+        margin: 5px;
+        padding: 5px;
+      }
+  body
+    table#table
+    span#error
+    script.
+      if ('#{resultado}' === "") {
+        document.getElementById('error').innerHTML = "Ingrese como administrador";
+      } else {
+        var data = JSON.parse('!{JSON.stringify(resultado)}');
+        for (var i = 0; i < data.length; i++) {
+
+          var newDiv = document.createElement("td");
+
+          var newContent = document.createTextNode(document.write(`<div class="coments">
+          Nombre: <span>${data[i].nombre}</span> <br> 
+          Email: <span>${data[i].email}</span> <br> 
+          Teléfono: <span>${data[i].telefono}</span> <br> 
+          Mensaje: <span>${data[i].mensaje}</span> <br><br></div>`));
+        
+          newDiv.appendChild(newContent); //añade texto al div creado
+          // añade el elemento creado y su contenido al DOM
+          var currentDiv = document.getElementById("table");
+          document.body.insertBefore(newDiv, currentDiv);
+        }
+      }
       

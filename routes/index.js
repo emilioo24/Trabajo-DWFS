@@ -1,7 +1,6 @@
 const sqlcon = require('../utils/conexion');
 var express = require('express');
 var router = express.Router();
-var coments = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -52,23 +51,27 @@ router.post('/enviar', function (req, res) {
 });
 
 router.get('/admin', function (req, res) {
-  sqlcon.query(`SELECT * FROM users`, function (error, result) {
-    if (error) {
-      console.error(error);
-    } else {
-      /*for (let i = 0; i < result.length; i++) {
-        console.log(result[i].nombre)
-        console.log(result[i].email)
-        console.log(result[i].telefono)
-        console.log(result[i].mensaje)
-        console.log("------------");
-      }*/
-      /*res.send(result.map(function(element) {
-        console.log(element.nombre);
-      }));*/
-      res.render('admin', { resultado: result });
-    }
-  });
+  res.render('admin');
+});
+
+router.get('/adminlog', function (req, res) {
+  res.render('adminlog');
+});
+
+router.post('/verificar', function (req, res) {
+  const adminUser = req.body;
+
+  if (adminUser.user === "admin" && adminUser.password === "Pelvison24") {
+    sqlcon.query(`SELECT * FROM users`, function (error, result) {
+      if (error) {
+        console.error(error);
+      } else {
+        res.render('admin', { resultado: result });
+      }
+    });
+  } else {
+    return res.render('adminlog', { error: "Datos erroneos" });
+  }
 });
 
 module.exports = router;
