@@ -112,9 +112,9 @@ html(lang='en')
           br
           label(for='mensaje') Mensaje:
           br
-          textarea#mensaje.textarea1(name='mensaje' tittle="Ingrese el mensaje que desea enviar" style='resize: none;' cols='90' rows='8' pattern='[0-9a-zA-Z ,.?¿]{1,12}')
-          textarea#mensaje.textarea3(name='mensaje' tittle="Ingrese el mensaje que desea enviar" style='resize: none;' cols='52' rows='7' pattern='[0-9a-zA-Z ,.?¿]{1,12}')
-          textarea#mensaje.textarea2(name='mensaje' tittle="Ingrese el mensaje que desea enviar" style='resize: none;' cols='29' rows='5' pattern='[0-9a-zA-Z ,.?¿]{1,12}')
+          textarea#mensaje.textarea1(name='mensaje' onkeydown="pulsar(event)" tittle="Ingrese el mensaje que desea enviar" style='resize: none;' cols='90' rows='8' pattern='[0-9a-zA-Z ,.?¿!¡()-_:;*]{1,12}')
+          textarea#mensaje.textarea3(name='mensaje' onkeydown="pulsar(event)" tittle="Ingrese el mensaje que desea enviar" style='resize: none;' cols='52' rows='7' pattern='[0-9a-zA-Z ,.?¿!¡()-_:;*]{1,12}')
+          textarea#mensaje.textarea2(name='mensaje' onkeydown="pulsar(event)" tittle="Ingrese el mensaje que desea enviar" style='resize: none;' cols='29' rows='5' pattern='[0-9a-zA-Z ,.?¿!¡()-_:;*]{1,12}')
           br
           br
           .button
@@ -146,6 +146,13 @@ html(lang='en')
             li
               a(href='tel:+543436227825')
                 i.bi.bi-telephone-fill
+    script.
+      function pulsar(e) {
+        if (e.which === 13 && !e.shiftKey) {
+        e.preventDefault();
+        return false;
+        }
+      }
     br
     br
     br
