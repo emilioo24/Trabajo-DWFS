@@ -12,9 +12,6 @@ html(lang='en')
       body {
         padding: 10px;
       }
-      td {
-        display: none;
-      }
       span {
         font-family: Arial;
         font-size: 14px;
@@ -34,18 +31,12 @@ html(lang='en')
         var data = JSON.parse('!{JSON.stringify(resultado)}');
         for (var i = 0; i < data.length; i++) {
 
-          var newDiv = document.createElement("td");
-
-          var newContent = document.createTextNode(document.write(`<div class="coments">
+          document.write(`<div class="coments">
           Nombre: <span>${data[i].nombre}</span> <br> 
           Email: <span>${data[i].email}</span> <br> 
           Teléfono: <span>${data[i].telefono}</span> <br> 
-          Mensaje: <span>${data[i].mensaje}</span> <br><br></div>`));
-        
-          newDiv.appendChild(newContent); //añade texto al div creado
-          // añade el elemento creado y su contenido al DOM
-          var currentDiv = document.getElementById("table");
-          document.body.insertBefore(newDiv, currentDiv);
+          Mensaje: <span>${data[i].mensaje}</span> <br><br></div>`);
+
         }
       }
       
