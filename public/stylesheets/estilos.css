@@ -148,16 +148,16 @@ main .textoport span {
     width: 350px;
 }
 
-.contenido1 {
+/*.contenido1 {
     border: 1px pink solid;
-}
+}*/
 .contenido1 img {
     width: 100%;
 }
 
-.contenido2 {
+/*.contenido2 {
     border: 1px pink solid;
-}
+}*/
 .contenido2 img {
     width: 100%;
 }
@@ -224,7 +224,7 @@ main .textoport span {
     padding-bottom: 10px;
     font-size: 30px;
     color: rgb(226, 105, 125);
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 .texto p {
     padding-bottom: 5px;
