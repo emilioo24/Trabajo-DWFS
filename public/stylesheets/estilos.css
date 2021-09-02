@@ -9,6 +9,9 @@ body {
 }
 
 header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     background-color: pink;
     padding: 1%;
     display: flex;
@@ -437,7 +440,7 @@ footer .logofooter img {
     text-align: center;
     z-index: 3;
     background-color: pink;
-    height: 200%;
+    height: 1200%;
     transition: right;
 }
 .menu-mobile .div1 {
