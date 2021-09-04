@@ -32,13 +32,6 @@ router.post('/enviar', function (req, res) {
   } else if (user.mensaje === "") {
     return res.render('contacto', { mensaje: "Debe completar el campo mensaje", color: "red" });
   } else {
-    if (user.mensaje[0] !== "") {
-      user.mensaje = user.mensaje[0];
-    } else if (user.mensaje[1] !== "") {
-      user.mensaje = user.mensaje[1];
-    } else {
-      user.mensaje = user.mensaje[2];
-    }
     sqlcon.query(`INSERT INTO users(nombre, email, telefono, mensaje) 
     VALUES ('${user.nombre}', '${user.email}', '${user.telefono}', '${user.mensaje}')`, function (error, result) {
       if (error) {
