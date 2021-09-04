@@ -137,10 +137,6 @@
     cursor: pointer;
 }
 
-.textarea3 {
-    display: none;
-}
-
 
 
 
@@ -193,16 +189,6 @@
 
     .contenido-servicios img {
         width: 200px;
-    }
-
-    .textarea3 {
-        display: block;
-    }
-    .textarea2 {
-        display: none;
-    }
-    .textarea1 {
-        display: none;
     }
 
 
@@ -286,13 +272,6 @@
         font-size: 20px;
     }
 
-    .form-contacto .textarea1 {
-        display: none;
-    }
-    .form-contacto .textarea2 {
-        display: block;
-    }
-
     .titulo-page h1 {
         font-size: 20px;
     }
@@ -307,10 +286,6 @@
     .contenido-servicios {
         border-left: 0px pink solid;
         border-right: 0px pink solid;
-    }
-
-    .textarea3 {
-        display: none;
     }
 
     .h-redes {
@@ -358,6 +333,11 @@
     .scroll ul,
     .scroll .toggle-menu {
         margin: 0;
+    }
+
+    .form-contacto {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
 }
